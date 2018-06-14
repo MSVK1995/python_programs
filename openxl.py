@@ -39,7 +39,7 @@ clearFill = PatternFill(start_color='FFFFFFFF', end_color='FFFFFFFF', fill_type=
 
 for (row1, row2) in zip(public, validate):
     for (cell1, cell2) in zip(row1, row2):
-        if not cell1.value or cell1.value == "NA":
+        if not cell1.value or cell1.value == "NA" :
 #            print("Empty", type(cell1.value) , end = "|")
             cell1.fill = redFill
             continue
@@ -61,11 +61,10 @@ for (row1, row2) in zip(public, validate):
                 else:
 #                    print("Invalid Str", end = "|")
                     cell1.fill = redFill
-                    
+#    print("\n")                
 #    index+=1
-#    if(index == 100):
+#    if(index == 1):
 #        break
-
 
 #print(public.cell["Name"])
 #
